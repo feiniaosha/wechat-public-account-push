@@ -25,8 +25,13 @@ const USER_CONFIG = {
       // 使用微信测试号：你想对他发送的模板消息的模板ID
       useTemplateId: 'H5vQ27GQ0mHp0vWxqNgRwZe3zD5hNEz1P8USUznNRZk',
       // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
-      horoscopeDate: '08-14',
+      horoscopeDate: '12-27',
       festivals: [
+       
+        // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
+        {
+          type: '生日', name: '宝', year: '1995 ', date: '08-13',
+        },
         {
           type: '节日', name: '相爱纪念日', year: '2016', date: '04-08',
         },
@@ -56,4 +61,3 @@ const USER_CONFIG = {
 }
 
 module.exports = USER_CONFIG
-
